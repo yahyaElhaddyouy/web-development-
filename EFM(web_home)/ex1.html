@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Vos donnes</h1>
+    <p>cliquer sur le button "aleratoire" pour tiree deux nombre entre -100 et 100</p>
+
+    <label for="A">A=</label>
+    <input type="text" id="A" readOnly="true">
+    <label for="B">B=</label>
+    <input type="text" id="B" readOnly="true">
+    <button onclick="alea()">Aleratoire</button>
+    <br>
+    <h1>Votre solution</h1>
+    <div class="tab">
+        <table cellspacing="6px" border="6px">
+            <tr>
+                <td>A+B</td>
+                <td><input type="number" maxlength="8" id="add"></td>
+            </tr>
+            <tr>
+                <td>A-B</td>
+                <td><input type="number" maxlength="8" id="sub"></td>
+            </tr>
+            <tr>
+                <td>A*B</td>
+                <td><input type="number" maxlength="8" id="multi"></td>
+            </tr>
+            <tr>
+                <td>A/B</td>
+                <td><input type="number" maxlength="8" id="div"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div align="center">
+                        <input type="button" id="verifier" value="Verifier" onclick="verifier()">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h1>La correction</h1>
+    <label for="add_res">A+B</label>
+    <input type="number" id="add_res" readOnly="true" maxlength="10" class="text-right">
+    <label for="sub_res">A-B</label>
+    <input type="number" id="sub_res" readOnly="true" maxlength="10" class="text-right">
+    <label for="multi_res">A*B</label>
+    <input type="number" id="multi_res" readOnly="true" maxlength="10" class="text-right">
+    <label for="div_res">A/B</label>
+    <input type="number" id="div_res" readOnly="true" maxlength="10" class="text-right">
+    <button onclick="Solution()">ok</button>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

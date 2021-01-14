@@ -1,0 +1,12 @@
+body {
+    background-color: #A7EDDF;
+}
+
+tr td {
+    color: red;
+}
+
+.text-right {
+    text-align: right;
+    color: #0000ff;
+}
