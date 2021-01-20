@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <form>
+        <label for="nom">nom</label>
+        <input type='text' id='nom' required><br>
+        <label for='password'>password</label>
+        <input type='password' id='password' required><br>
+        <label for='radio'>afficher div</label>
+        <input type='radio' id='aff_div' name='div' value="oui" checked onclick="visibl()">
+        <label>oui</label>
+        <br>
+        <input type='radio' id='aff_div1' name='div' value="non" onclick="cache()">
+        <lable>non</lable>
+        <div id="d1">
+            <label>choisir une ville</label>
+            <select id='s1'>
+                <option value='' selected hidden disabled>selectionner une ville</option>
+                <option value='Maroc'>Maroc</option>
+                <option value='Algerie'>Algerie</option>
+                <option value='Egypte'>Egypte</option>
+            </select>
+        </div>
+        <button onclick="submt()">se connecter</button>
+        <input type='reset' value='annuler'>
+    </form>
+</body>
+
+</html>
